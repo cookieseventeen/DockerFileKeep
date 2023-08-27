@@ -14,7 +14,7 @@ docker image build --tag ckman18/angular-latest .
 docker run -d -it -v $PWD:/var/sandbox --name angular-latest ckman18/angular-latest
 ```
 
-## dockerfile 的目錄下 build image 並 tag 為字的帳號
+## dockerfile 的目錄下 build image 並 tag 為自己的帳號
 
 ```
 docker image build --tag ckman18/angular-latest .
