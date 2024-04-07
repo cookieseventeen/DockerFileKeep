@@ -14,10 +14,16 @@ docker image build --tag ckman18/angular-latest .
 docker run -d -it -v $PWD:/var/sandbox --name angular-latest ckman18/angular-latest
 ```
 
+## 同上，差別利用環境變數指定版本
+
+```
+docker build --build-arg NODE_VERSION=14.21.3 --build-arg ANGULAR_CLI_VERSION=11.0.7 -t neux-angular .
+```
+
 ## dockerfile 的目錄下 build image 並 tag 為自己的帳號
 
 ```
-docker image build --tag ckman18/angular-latest .
+docker image build --tag ckman18/angular-latest . 
 ```
 
 ## push 到自己的 Hub
